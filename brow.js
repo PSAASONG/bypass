@@ -195,14 +195,14 @@ const stealthPlugin = puppeteerStealth();
 puppeteer.use(stealthPlugin);
 if (process.argv.length < 8) {
   console.clear();
-console.log(`
-  ${chalk.cyanBright('HTTP BROWS')} | Updated: Oktober 01, 202t
+  console.log(`
+  ${chalk.cyanBright('HTTP BROWS')} | Updated: Oktober 01, 2025
     
-    ${chalk.blueBright('Usage:')}
-      ${chalk.redBright(`node ${process.argv[1]} <target> <duration> <threads browser> <threads flood> <rates> <proxy>`)}
-`);
-process.exit(1);
-};
+  ${chalk.blueBright('Usage:')}
+    ${chalk.redBright(`node ${process.argv[1]} <target> <duration> <threads browser> <threads flood> <rates> <proxy>`)}
+  `);
+  process.exit(1);
+}
 
 const targetURL = process.argv[2];
 const duration = parseInt(process.argv[3]);
