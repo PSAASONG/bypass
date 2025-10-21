@@ -196,7 +196,7 @@ puppeteer.use(stealthPlugin);
 if (process.argv.length < 8) {
   console.clear();
   console.log(`
-  ${chalk.cyanBright('HTTP BROWS')} | Updated: Oktober 01, 2025
+  ${chalk.redBright('HTTP BROWS')} | Updated: Oktober 01, 2025
     
   ${chalk.blueBright('Usage:')}
     ${chalk.redBright(`node ${process.argv[1]} <target> <duration> <threads browser> <threads flood> <rates> <proxy>`)}
